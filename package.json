@@ -1,0 +1,11 @@
+{
+  "name": "hmsk-quote",
+  "version": "1.0.0",
+  "description": "Free quotes (Angebote) in the browser; an accepted quote becomes an invoice with one click. Built on the HMSK Invoice engine.",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "start": "python3 -m http.server 8080 --directory public"
+  }
+}
