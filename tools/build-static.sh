@@ -7,8 +7,9 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 OUT="${1:?usage: tools/build-static.sh OUTDIR [CONFIG.js]}"
 CFG="${2:-public/config.js}"
-mkdir -p "$OUT/assets"
-for f in index.html app.css app.js i18n.js rules.js render.js xrechnung.js demo.js quote.js; do cp "public/$f" "$OUT/$f"; done
+mkdir -p "$OUT/assets" "$OUT/fonts"
+for f in index.html letterpress.css app.css app.js i18n.js rules.js render.js xrechnung.js demo.js quote.js; do cp "public/$f" "$OUT/$f"; done
 cp public/assets/icon.svg "$OUT/assets/icon.svg"
+cp public/fonts/*.woff2 public/fonts/OFL-*.txt "$OUT/fonts/"
 cp "$CFG" "$OUT/config.js"
 echo "Static build written to $OUT"

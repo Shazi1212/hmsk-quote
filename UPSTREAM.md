@@ -3,6 +3,9 @@
 Engine files copied from `hmsk-invoice` at commit `3e75226` ("Optional "Created with HMSK Invoice" footer line"):
 `index.html`, `app.css`, `app.js`, `i18n.js`, `rules.js`, `render.js`, `xrechnung.js`, `demo.js`, `assets/icon.svg`.
 
+The Letterpress restyle (`app.css`, `assets/icon.svg`, the `index.html` head, `letterpress.css` + `fonts/`) is taken
+from Invoice commit `97c9953`; `app.css` and the icon are identical in both repos.
+
 Changes against that commit:
 
 - `app.js`: config keys `docMode` and `invoiceUrl`; quote mode (blank document is a quotation, validity instead of the
